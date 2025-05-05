@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Editor Portfolio</title>
+  <style>
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+    .hero-header {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://i.ytimg.com/vi/C7F9kCUJhLk/maxresdefault.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(17, 17, 17, 0.7);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+.hero-header .overlay {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-header h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-header p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.cta-button {
+  background-color: #00bcd4;
+  color: #111;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00a1b2;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <header class="hero-header">
+  <nav class="<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <div class="logo">🎬 CINEREC</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="overlay">
+    <h1>Welcome to Ojas Sharma's Portfolio</h1>
+    <p>Creative videos, impactful storytelling, and professional content</p>
+    
+  </div>
+</header>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate video editor with experience in capcut and i make my own short films withe creating my own cinematic shots and with my own ideas.    </p>
+  </section>
+
+  <section>
+    <h2>My Work</h2>
+    <div class="portfolio">
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/lpv-yhAHvZo?si=nq2W54Me8UwLfHB7" allowfullscreen></iframe>
+<img src="https://repository-images.githubusercontent.com/603455680/fa7478d2-c917-40fe-8459-b280f3adf52f" alt="Video thumbnail" style="width:100%; border-radius:8px;">
+        <p>project:2:00AM</p>
+      </div>
+               </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Gmail: <a href="mailto:ojassharmaixd@gmai.com">ojassharmaixd@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/_cinerec" target="_blank">@_cinerec</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Ojas Sharma. All rights reserved.</p>
+  </footer>
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>
